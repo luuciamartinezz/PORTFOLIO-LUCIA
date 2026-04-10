@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  height: calc(100vh - 3rem);
+  background-image: url(../img/cabecera.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h1,
+h2 {
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#menu > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  padding-left: 0;
+  list-style: none;
+  height: 2rem;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: white;
+}
+
+#menu > ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0 2rem;
+  scroll-margin-top: 3rem;
+}
+
+footer {
+  padding: 0 2rem;
+}
+
+footer > p > a {
+  color: white;
+}
