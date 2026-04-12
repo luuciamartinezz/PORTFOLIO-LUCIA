@@ -15,7 +15,7 @@ body {
 /* HEADER */
 .hero {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 3rem);
 }
 
 /* MITADES */
@@ -30,24 +30,14 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 20px;
 }
 
 /* TITULO */
 .hero-left h1 {
   font-size: 50px;
-  font-size: 6rem;
-}
-
-/* ABOUT */
-.about h2 {
-  font-size: 24px;
-}
-
-.about p {
-  max-width: 500px;
-  line-height: 1;
+  font-size: 7rem;
+  padding-top: 2rem;
 }
 
 /* LOGOS */
@@ -74,6 +64,7 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 #menu > ul {
@@ -92,6 +83,34 @@ h2 {
   text-decoration: none;
   font-weight: bold;
   color: black;
+}
+
+.marquesina {
+  overflow: hidden; /* 👈 CAMBIA ESTO */
+  padding: 1rem;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.marquesina > div {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: marquesina 15s linear infinite;
+}
+
+.marquesina,
+.marquesina * {
+  color: black;
+}
+
+@keyframes marquesina {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 section {
