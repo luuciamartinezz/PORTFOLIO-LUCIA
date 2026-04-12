@@ -41,6 +41,12 @@ body {
   object-fit: cover;
 }
 
+#ABOUTME > p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
 /* H-----------------------------------------------------  */
 
 h1 {
@@ -50,7 +56,14 @@ h1 {
 
 h2 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
+}
+
+.section-title {
+  border-bottom: 1px solid white;
+  margin: 0;
+  padding: 0.2rem 0;
+  line-height: 1;
 }
 
 /* MENU-----------------------------------------------------  */
@@ -116,14 +129,14 @@ h2 {
 section {
   min-height: 50vh;
   padding: 0 2rem;
-  scroll-margin-top: 3rem;
+  scroll-margin-top: -5rem;
 }
 
 /* PROJECTS-----------------------------------------------------  */
 
 #PROJECTS h2 {
   font-size: 7rem;
-  padding: 1rem;
+  padding-top: 8rem;
 }
 
 #PROJECTS > div {
@@ -140,8 +153,8 @@ section {
 }
 
 #PROJECTS > div > figure > img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   object-position: center;
 }
@@ -158,15 +171,19 @@ section {
 /* CONTACT-----------------------------------------------------  */
 
 #CONTACT {
-  padding-bottom: 5rem;
+  padding-bottom: 11rem;
 }
 
 #CONTACT h2 {
   font-size: 7rem;
-  padding: 1rem;
+  padding-top: 8rem;
 }
 
-#CONTACT > p {
+#CONTACT > div {
+  padding-top: 2rem;
+}
+
+#CONTACT > div > p {
   padding: 0 4rem;
   line-height: 2;
   font-size: 1.2rem;
