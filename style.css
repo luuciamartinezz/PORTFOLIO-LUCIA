@@ -37,7 +37,7 @@ body {
 
 .hero-right img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -146,17 +146,21 @@ section {
   gap: 3rem 8rem;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 #PROJECTS > div > figure {
   text-align: center;
+  flex: 0 1 300px;
 }
 
 #PROJECTS > div > figure > img {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 300px;
   object-fit: cover;
   object-position: center;
+  transition: transform 0.7s;
 }
 
 #PROJECTS > div > figure:hover > img {
@@ -187,4 +191,47 @@ section {
   padding: 0 4rem;
   line-height: 2;
   font-size: 1.2rem;
+}
+
+/* RESPONSIVE ------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-right img {
+    height: auto;
+  }
+  section {
+    min-height: 0vh;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .hero-left h1 {
+    font-size: 25px;
+    font-size: 4rem;
+    padding-top: 2rem;
+    letter-spacing: -7px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  #PROJECTS h2 {
+    font-size: 3rem;
+    padding-top: 5rem;
+  }
+
+  #CONTACT h2 {
+    font-size: 3rem;
+    padding-top: 5rem;
+  }
+  #CONTACT > div > p {
+    padding: 0 2rem;
+    line-height: 2;
+    font-size: 1rem;
+  }
 }
