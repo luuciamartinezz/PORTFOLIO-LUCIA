@@ -7,6 +7,7 @@
 
 body {
   background-color: black;
+  font-size: 1rem;
 }
 
 /* HEADER-----------------------------------------------------  */
@@ -206,6 +207,15 @@ section {
   }
   section {
     min-height: 0vh;
+  }
+  body {
+    font-size: 2rem;
+  }
+  #PROJECTS > div {
+    font-size: 2rem;
+  }
+  #CONTACT > div > p {
+    font-size: 2rem;
   }
 }
 
