@@ -95,6 +95,26 @@ h2 {
   color: black;
 }
 
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: white;
+  padding: 0.8rem 1rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu-icon i {
+  color: black;
+  font-size: 1.5rem;
+}
+
 /* MARQUESINA-----------------------------------------------------  */
 
 .marquesina {
@@ -216,6 +236,57 @@ section {
   }
   #CONTACT > div > p {
     font-size: 2rem;
+  }
+
+  #menu > div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    height: 3rem;
+    z-index: 1;
+  }
+
+  .menu-icon {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    background: transparent;
+    z-index: 2;
+  }
+
+  #menu > div > ul {
+    position: static;
+    top: 3rem;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+    display: none;
+    height: auto;
+    align-items: flex-start;
+    gap: 0;
+    padding: 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + div ul {
+    display: flex;
+  }
+
+  #menu > div > ul > li {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+  #menu > div > ul > li > a {
+    display: block;
+    width: 100%;
   }
 }
 
